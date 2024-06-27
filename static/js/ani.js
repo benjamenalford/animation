@@ -24,21 +24,10 @@ gridArray.forEach(square => {
         .style('position', 'absolute')
         .style('left', (x * 50) + "px")
         .style('top', (y * 50) + "px")
-        .text("Chicken " + x)
         .on('click', (e) => {
-            d3.select("#shopping-list").append('li').text("Chicken" + " " + y);
-            getIngredients("Chicken")
             d3.select(e.target)
-                .attr("chicken", 'click')
                 .style("animation-name", 'test')
                 .style("animation-duration", '4s')
                 .style("animation-iteration-count", "infinite")
         });
 });
-let ingredients = []
-
-function getIngredients(recipe) {
-    //api gets chicken ingredients
-    //adds to list
-    ingredients.push({})
-}

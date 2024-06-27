@@ -5,11 +5,6 @@
     background-color: aquamarine;
 }
 
-#shopping-list {
-    position: absolute;
-    left: calc(55px * 8)
-}
-
 @keyframes test {
     from {
         background-color: black;
