@@ -1,0 +1,21 @@
+.grid-square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+#shopping-list {
+    position: absolute;
+    left: calc(55px * 8)
+}
+
+@keyframes test {
+    from {
+        background-color: black;
+    }
+
+    to {
+        /* background-color: aquamarine; */
+    }
+}
