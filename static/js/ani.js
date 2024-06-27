@@ -9,12 +9,6 @@ for (let i = 0; i < GRID_SIZE; i++) {
     }
 }
 
-// Create a group for each row of the grid
-let rows = [];
-for (let i = 0; i < GRID_SIZE; i++) {
-    rows.push(gridContainer.append('div').attr('class', 'grid-row'));
-}
-
 // Add squares to the corresponding row in the grid
 gridArray.forEach(square => {
     let x = square.x;
