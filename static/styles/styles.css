@@ -1,16 +1,31 @@
 .grid-square {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
-    background-color: aquamarine;
+    /* border: 1px solid black; */
+    /* background-color: hsl(160, 100%, 75%); */
 }
 
-@keyframes test {
+.grid-square-on {
+    animation-name: grid-on;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.grid-square-off {
+    animation-name: grid-off;
+    animation-duration: 0s;
+    animation-iteration-count: 0;
+}
+
+@keyframes grid-on {
     from {
         background-color: black;
     }
+}
+
+@keyframes grid-off {
 
     to {
-        /* background-color: aquamarine; */
+        background-color: rgb(128, 255, 212);
     }
 }
