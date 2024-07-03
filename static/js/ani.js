@@ -34,7 +34,7 @@ gridArray.forEach((square) => {
         .style('top', (y * 50) + 'px')
         .on('click', (e) => {
             console.log(d3.select(e.target).attr('id'))
-        }).text(square.id);
+        });
 });
 
 function drawChar(char = '') {
@@ -57,7 +57,7 @@ function drawText(text = '') {
     text.split('').forEach((char, i) => {
         setTimeout(() => {
             drawChar(char);
-        }, (3000 * i));
+        }, (4000 * i));
     })
 
 }

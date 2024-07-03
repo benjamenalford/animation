@@ -7,14 +7,14 @@
 
 .grid-square-on {
     animation-name: grid-on;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
 }
 
 .grid-square-off {
     animation-name: grid-off;
-    animation-duration: 0s;
-    animation-iteration-count: 0;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
 }
 
 @keyframes grid-on {
@@ -24,8 +24,7 @@
 }
 
 @keyframes grid-off {
-
     to {
-        background-color: rgb(128, 255, 212);
+        /* background-color: rgb(128, 255, 212); */
     }
 }
